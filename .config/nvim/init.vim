@@ -54,17 +54,12 @@ set listchars=tab:▸\ ,eol:¬
 " Set line numbering
 set nu
 
-" Support for virtualenv
-
 " Buffer key bindings
 nmap <leader>t :enew<CR>
 nmap <leader>l :bnext<CR>
 nmap <leader>h :bprevious<CR>
 nmap <leader>bq :bp <BAR>bd #<CR>
 nmap <leader>bl :ls<CR>
-
-" Go to definition binding
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " Allow unsaved changed to hidden buffers
 set hidden
