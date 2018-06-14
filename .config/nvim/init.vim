@@ -63,3 +63,6 @@ nmap <leader>bl :ls<CR>
 
 " Allow unsaved changed to hidden buffers
 set hidden
+
+" Colour scheme
+colorscheme mod8-srs
