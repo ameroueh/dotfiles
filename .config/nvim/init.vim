@@ -41,7 +41,8 @@ if exists('*minpac#init')
 		let g:airline_powerline_fonts = 1
 
 	call minpac#add('vim-airline/vim-airline-themes')
-		let g:airline_theme='dark'
+	
+	call minpac#add('morhetz/gruvbox')
 endif
 
 
@@ -65,4 +66,5 @@ nmap <leader>bl :ls<CR>
 set hidden
 
 " Colour scheme
-colorscheme mod8-srs
+colorscheme gruvbox
+set background=dark
