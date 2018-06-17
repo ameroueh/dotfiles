@@ -24,6 +24,11 @@ if exists('*minpac#init')
 	call minpac#add('tpope/vim-commentary')
 
 	call minpac#add('tpope/vim-fugitive')
+		nnoremap <unique> <silent> <space>gb :Gblame<cr>
+		nnoremap <unique> <silent> <space>gc :Gcommit<cr>
+		nnoremap <unique> <silent> <space>gd :Gdiff<cr>
+		nnoremap <unique> <silent> <space>gs :Gstatus<cr>
+		nnoremap <unique> <silent> <space>gw :Gwrite<cr>
 
 	call minpac#add('w0rp/ale')
 		let g:ale_echo_msg_format = '%linter%: %s'
@@ -51,7 +56,7 @@ if exists('*minpac#init')
 		let g:ctrlp_map = '<c-p>'
 		let g:ctrlp_cmd = 'CtrlP'
 		let g:ctrlp_working_path_mode = 'ra'
-		  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+		let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 endif
 
