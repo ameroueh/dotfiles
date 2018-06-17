@@ -31,6 +31,9 @@ if exists('*minpac#init')
 		let g:ale_python_mypy_options = '--ignore-missing-imports'
 		let g:ale_python_pylint_options = '--disable-missing-docstring'
 
+		" Automatically close buffers on quitting
+		autocmd QuitPre * if empty(&bt) | lclose | endif
+
 	call minpac#add('tmhedberg/SimpylFold')
 		let g:SimpylFold_docstring_preview=1
 		nnoremap <space> za
