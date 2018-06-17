@@ -24,11 +24,11 @@ if exists('*minpac#init')
 	call minpac#add('tpope/vim-commentary')
 
 	call minpac#add('tpope/vim-fugitive')
-		nnoremap <unique> <silent> <space>gb :Gblame<cr>
-		nnoremap <unique> <silent> <space>gc :Gcommit<cr>
-		nnoremap <unique> <silent> <space>gd :Gdiff<cr>
-		nnoremap <unique> <silent> <space>gs :Gstatus<cr>
-		nnoremap <unique> <silent> <space>gw :Gwrite<cr>
+		nnoremap <unique> <silent> <leader>gb :Gblame<cr>
+		nnoremap <unique> <silent> <leader>gc :Gcommit<cr>
+		nnoremap <unique> <silent> <leader>gd :Gdiff<cr>
+		nnoremap <unique> <silent> <leader>gs :Gstatus<cr>
+		nnoremap <unique> <silent> <leader>gw :Gwrite<cr>
 
 	call minpac#add('w0rp/ale')
 		let g:ale_echo_msg_format = '%linter%: %s'
