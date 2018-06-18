@@ -50,7 +50,7 @@ if exists('*minpac#init')
 
 	call minpac#add('vim-airline/vim-airline-themes')
 	
-	call minpac#add('morhetz/gruvbox')
+	call minpac#add('NLKNguyen/papercolor-theme')
 
 	call minpac#add('ctrlpvim/ctrlp.vim')
 		let g:ctrlp_map = '<c-p>'
@@ -81,5 +81,5 @@ nmap <leader>bl :ls<CR>
 set hidden
 
 " Colour scheme
-colorscheme gruvbox
-set background=dark
+colorscheme PaperColor
+set background=light
