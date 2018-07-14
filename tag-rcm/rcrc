@@ -1,0 +1,2 @@
+EXCLUDES="LICENSE README.md"
+TAGS="nvim tmux"
