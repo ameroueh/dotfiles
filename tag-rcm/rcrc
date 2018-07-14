@@ -1,2 +1,2 @@
-EXCLUDES="LICENSE README.md"
+EXCLUDES="LICENSE README.md install"
 TAGS="nvim tmux"
