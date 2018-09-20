@@ -58,6 +58,8 @@ if exists('*minpac#init')
 		let g:ctrlp_working_path_mode = 'ra'
 		let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
+	call minpac#add('sbdchd/neoformat')
+		autocmd BufWritePre *.py Neoformat
 endif
 
 
@@ -83,3 +85,6 @@ set hidden
 " Colour scheme
 colorscheme PaperColor
 set background=light
+
+" Preview command results
+set inccommand=nosplit

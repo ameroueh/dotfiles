@@ -9,3 +9,5 @@ sudo apt-get update -y
 sudo apt-get install neovim -y
 
 pip install neovim
+pip install flake8
+pip install black
