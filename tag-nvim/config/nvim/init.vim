@@ -88,3 +88,7 @@ set background=light
 
 " Preview command results
 set inccommand=nosplit
+
+" Source project-specific .vimrc
+set exrc
+set secure
