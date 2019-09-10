@@ -30,14 +30,15 @@ if exists('*minpac#init')
 		nnoremap <unique> <silent> <leader>gs :Gstatus<cr>
 		nnoremap <unique> <silent> <leader>gw :Gwrite<cr>
 
-	call minpac#add('w0rp/ale')
-		let g:ale_echo_msg_format = '%linter%: %s'
-		let g:ale_open_list = 1
-		let g:ale_python_mypy_options = '--ignore-missing-imports'
-		let g:ale_python_pylint_options = '--disable-missing-docstring'
+	" call minpac#add('w0rp/ale')
+	" 	let g:ale_echo_msg_format = '%linter%: %s'
+	" 	let g:ale_open_list = 1
+	" 	let g:ale_python_mypy_options = '--ignore-missing-imports'
+	" 	let g:ale_python_pylint_options = '--disable-missing-docstring'
+	" 	let g:ale_c_build_dir = "build"
 
-		" Automatically close buffers on quitting
-		autocmd QuitPre * if empty(&bt) | lclose | endif
+	" 	" Automatically close buffers on quitting
+	" 	autocmd QuitPre * if empty(&bt) | lclose | endif
 
 	call minpac#add('tmhedberg/SimpylFold')
 		let g:SimpylFold_docstring_preview=1
@@ -78,6 +79,8 @@ nmap <leader>l :bnext<CR>
 nmap <leader>h :bprevious<CR>
 nmap <leader>bq :bp <BAR>bd #<CR>
 nmap <leader>bl :ls<CR>
+
+imap jj <Esc>
 
 " Allow unsaved changed to hidden buffers
 set hidden
