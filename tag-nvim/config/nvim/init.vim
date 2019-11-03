@@ -1,5 +1,7 @@
 scriptencoding utf-8
 
+imap jj <Esc>
+
 if empty(glob('~/.config/nvim/minpac'))
 	silent !git clone https://github.com/k-takata/minpac.git
 		 \ ~/.config/nvim/pack/minpac/opt/minpac
@@ -18,8 +20,6 @@ if exists('*minpac#init')
 
 	call minpac#add('machakann/vim-highlightedyank')
 		let g:highlightedyank_highlight_duration = 250
-
-	call minpac#add('roxma/nvim-completion-manager')
 
 	call minpac#add('tpope/vim-commentary')
 
