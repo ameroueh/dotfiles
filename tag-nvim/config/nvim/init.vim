@@ -75,6 +75,7 @@ set hidden
 " Colour scheme
 colorscheme PaperColor
 set background=light
+set termguicolors
 
 " Preview command results
 set inccommand=nosplit
