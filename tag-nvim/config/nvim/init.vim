@@ -13,23 +13,6 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'neoclide/coc.nvim', {'branc': 'release'}
-
-Plug 'jackguo380/vim-lsp-cxx-highlight'
-	let g:cpp_class_scope_highlight = 1
-	let g:cpp_member_variable_highlight = 1
-	let g:cpp_class_decl_highlight = 1
-
-Plug  'vim-syntastic/syntastic'
-	let g:syntastic_cpp_checkers = ['cpplint']
-	let g:syntastic_c_checkers = ['cpplint']
-	let g:syntastic_cpplint_exec = 'cpplint'
-	let g:syntastic_check_on_open = 1
-	let g:syntastic_check_on_wq = 0
-
-Plug 'rhysd/vim-clang-format'
-	nnoremap <Leader>f :<C-u>ClangFormat<CR>
-
 Plug 'airblade/vim-gitgutter'
 
 Plug 'machakann/vim-highlightedyank'
