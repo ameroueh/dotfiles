@@ -49,6 +49,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'sbdchd/neoformat'
 	autocmd BufWritePre *.py Neoformat
 
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+
 call plug#end()
 
 " Toggle invisible characters
@@ -68,6 +70,12 @@ nmap <leader>bq :bp <BAR>bd #<CR>
 nmap <leader>bl :ls<CR>
 
 imap jj <Esc>
+
+" File type detection
+filetype on
+
+" Syntax highlighting
+syntax on
 
 " Allow unsaved changed to hidden buffers
 set hidden
