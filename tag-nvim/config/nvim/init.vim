@@ -85,6 +85,9 @@ set termguicolors
 " Preview command results
 set inccommand=nosplit
 
+" Indentation
+set autoindent expandtab tabstop=2 shiftwidth=2
+
 " Source project-specific .vimrc
 set exrc
 set secure
