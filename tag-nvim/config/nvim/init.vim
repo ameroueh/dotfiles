@@ -38,8 +38,6 @@ Plug 'vim-airline/vim-airline'
 
 Plug 'vim-airline/vim-airline-themes'
 
-Plug 'NLKNguyen/papercolor-theme'
-
 Plug 'ctrlpvim/ctrlp.vim'
 	let g:ctrlp_map = '<c-p>'
 	let g:ctrlp_cmd = 'CtrlP'
@@ -81,7 +79,6 @@ syntax on
 set hidden
 
 " Colour scheme
-colorscheme PaperColor
 set background=light
 set termguicolors
 
